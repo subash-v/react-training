@@ -1,0 +1,101 @@
+.base {
+  width: 100%;
+  height: 70px;
+  color: #fff;
+  background: #212121;
+  padding: 0px 80px;
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center;
+}
+.logo {
+  color: #fff;
+  font-size: 16px;
+}
+.subLogo {
+  color: #882909;
+}
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.navList {
+  padding-right: 48px;
+  color: #afa5a3;
+  font-size: 14px;
+  cursor: pointer;
+}
+.navList:hover {
+  color: #fff;
+}
+.button {
+  width: 162px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ee3c00;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.buttonText {
+  font-size: 14px;
+  padding-left: 10px;
+}
+.messageIcon {
+  /* background-image: url("../images/message.png"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 16px;
+  height: 16px;
+}
+@media screen and (min-width: 1025px) {
+  .menu {
+    display: none;
+  }
+  .message {
+    display: none;
+  }
+}
+.banner {
+  height: calc(163.7vh - 71vh);
+  width: 100%;
+  background: url("banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  /* line-break: strict; */
+}
+
+.bannertxt {
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  max-width: 620px;
+  padding-bottom: 20px;
+}
+.service {
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: white;
+  margin: 10px;
+}
+.sercontainer {
+  display: flex;
+  flex-direction: row;
+}

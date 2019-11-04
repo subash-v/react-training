@@ -1,26 +1,53 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Logo from "./Logo.js";
+import "./App.css";
+import style from "./style.module.css";
+import React, { Component } from "react";
+import ServiceLogo from "./ServiceLogo.js";
+class App extends Component {
+  render() {
+    return (
+      <div className>
+        <div className={style.base}>
+          <div className={style.menu}></div>
+          <div className={style.logo}>
+            COMPANY<span className={style.subLogo}> LOGO</span>
+          </div>
+          <div className={style.navContainer}>
+            <div className={style.nav}>
+              <div className={style.navList}>About</div>
+              <div className={style.navList}>Service</div>
+              <div className={style.navList}>Solutions</div>
+              <div className={style.navList}>Blog</div>
+            </div>
+            <div className={style.button}>
+              {/* <div className={style.messageIcon}></div> */}
+              <div className={style.buttonText}>Get In Touch</div>
+            </div>
+          </div>
+          <div className={style.message}></div>
+        </div>
+        <div className={style.banner}>
+          <div className={style.bannertxt}>
+            Integer bibendum sit amet arcu vel agestas.
+          </div>
+          <div className={style.sercontainer}>
+            <div className={style.service}>
+              <ServiceLogo height="90px" width="105px"></ServiceLogo>
+              Service Name
+            </div>
+            <div className={style.service}>
+              <ServiceLogo height="90px" width="105px"></ServiceLogo>
+              Service Name
+            </div>
+            <div className={style.service}>
+              <ServiceLogo height="90px" width="105px"></ServiceLogo>
+              Service Name
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;
