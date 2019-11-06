@@ -99,3 +99,35 @@
   display: flex;
   flex-direction: row;
 }
+.content {
+  font-size: 38px;
+  font-weight: bold;
+  padding-left: 50px;
+  max-width: 700px;
+  line-height: 50px;
+  color: rgb(73, 72, 72);
+}
+.contcontainer {
+  width: 100%;
+  padding: 70px;
+  display: inline-block;
+  justify-content: center;
+}
+.image {
+  padding-right: 100px;
+  padding-top: 20px;
+  position: relative;
+  bottom: 447px;
+  z-index: -1;
+  display: flex;
+  justify-content: flex-end;
+  height: 300px;
+}
+.desc {
+  font-size: 20px;
+  padding: 30px;
+  padding-left: 50px;
+  text-align: justify;
+  max-width: 900px;
+  line-height: 30px;
+}
