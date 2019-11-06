@@ -4,6 +4,7 @@ import style from "./style.module.css";
 import React, { Component } from "react";
 import ServiceLogo from "./ServiceLogo.js";
 import image from "./map.png";
+import Avatar from "./Avatar"
 class App extends Component {
   render() {
     return (
@@ -51,21 +52,34 @@ class App extends Component {
             Majsa d dfddf dfkdf fd fsjs ajsj dajdajadjijd kjadijda jsapojda
             jaddjanijad kaddn na jans
           </div>
-          <div className={style.desc}>
+          <div className={style.image}>
+            <img src={image} width="500px" height="350px"></img>
+          </div>
+         
+          
+        </div>
+        <div className={style.desc}>
           Have you had trouble understanding some of the React lifecycle methods and how to implement them without messing up?
 
 Don’t worry you are not alone. When I first started coding my React app, I ran into situations where I had to take a step back and learn the React lifecycle methods before I could proceed.
 
 Before we get started, I want you to know that the latest React versions have determined that some of the older lifecycle methods are unsafe to use and will be deprecated in React 17. In this blog post we will not learn about the soon to be deprecated unsafe lifecycle methods.
           </div>
-          <div className={style.image}>
-            <img src={image} width="500px"></img>
-          </div>
-        </div>
         <div className={style.test}>
         <div className={style.testitle}>
 Testimonials
-        </div>
+</div>
+
+<div className={style.avatar}>
+<Avatar />
+<div className={style.cname}>
+{"Client name"}
+</div>
+<div className={style.pos}>
+{"Position, ORG"}
+</div>
+</div>
+      
         </div>
       </div>
     );
